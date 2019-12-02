@@ -17,6 +17,7 @@ To build, either use the build scripts or use these commands:
     ```
 
 **Build the PAM module**
+`gcc mypam.c -o /lib/security/modules.so -fno-stack-protector -fPIC -m64 -shared -lpam`
 
 `gcc -fPIC -fno-stack-protector -c src/mypam.c`
 
