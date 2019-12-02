@@ -5,6 +5,17 @@ This is just a simple PAM module and test code for it. There really isn't much t
 
 To build, either use the build scripts or use these commands:
 
+- Dependency resolution
+   ### CentOS
+    ``` sh
+    yum intall pam-devel
+    ```
+    
+   ### Ubuntu 
+    ``` sh
+    apt-get intall libpam-dev
+    ```
+
 **Build the PAM module**
 
 `gcc -fPIC -fno-stack-protector -c src/mypam.c`
